@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apinop Songderm | Online Resume</title>
+  <style>
+    :root {
+      --navy: #183153;
+      --blue: #2f6690;
+      --light: #f2f6fa;
+      --text: #263238;
+      --muted: #5f6b73;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .resume {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--white);
+      box-shadow: 0 12px 35px rgba(24, 49, 83, 0.12);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 42px 48px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      opacity: 0.9;
+      font-size: 1.05rem;
+    }
+
+    main { padding: 34px 48px 44px; }
+
+    section { margin-bottom: 28px; }
+
+    h2 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      margin: 0 0 12px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #dce7f0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p { margin: 0; }
+
+    .detail-label {
+      font-weight: bold;
+      color: var(--navy);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .skill {
+      background: #eaf2f8;
+      color: var(--navy);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: var(--muted);
+      background: #f8fafc;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .resume { margin: 0; border-radius: 0; }
+      header { padding: 32px 24px; }
+      main { padding: 28px 24px 34px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .resume { margin: 0; box-shadow: none; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <h1>Apinop Songderm</h1>
+      <p>Online Resume</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contact Information</h2>
+        <p><span class="detail-label">Address:</span> O2 omyim 222 room</p>
+      </section>
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Hello, my name is Apinop. I am a creative, responsible, and hardworking
+          person. I am eager to learn new things and gain work experience.
+          Thank you for this opportunity.
+        </p>
+      </section>
+
+      <section>
+        <h2>Work Experience & Computer Skills</h2>
+        <p>
+          I have experience using Microsoft Word, Excel, and PowerPoint. I can
+          create documents, organize data, and prepare presentations. I am also
+          willing to learn new computer programs and improve my skills.
+        </p>
+        <div class="skills" aria-label="Computer skills">
+          <span class="skill">Microsoft Word</span>
+          <span class="skill">Microsoft Excel</span>
+          <span class="skill">Microsoft PowerPoint</span>
+          <span class="skill">Willingness to Learn</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>University of the Thai Chamber of Commerce</p>
+      </section>
+
+      <section>
+        <h2>Hobbies & Interests</h2>
+        <p>Playing games</p>
+      </section>
+    </main>
+
+    <footer>
+      Thank you for viewing my resume.
+    </footer>
+  </div>
+</body>
+</html>
